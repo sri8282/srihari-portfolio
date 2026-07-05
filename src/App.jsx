@@ -11,10 +11,18 @@ import Certificates from './components/Certificates'
 import SoftSkills from './components/SoftSkills'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import SplashCursor from './components/SplashCursor'
 
 function App() {
   return (
     <>
+      <SplashCursor
+        VELOCITY_DISSIPATION={3}
+        SPLAT_FORCE={3500}
+        COLOR_UPDATE_SPEED={18}
+        COLOR="#ffffff"
+        RAINBOW_MODE={false}
+      />
       <Preloader />
       <Navbar />
       <Hero />
